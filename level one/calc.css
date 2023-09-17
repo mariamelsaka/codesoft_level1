@@ -1,0 +1,133 @@
+*{
+    font-family: "Berlin Sans FB";
+}
+.parent{
+    height:700px;
+    width:450px;
+    background-color: #78c9ff8f;
+    display: grid;
+    grid-template-rows: repeat(6,auto);
+    gap:10px  ;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 20px;
+    position: absolute;
+    left:30%;
+    
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+input[type="button"]{
+    font-size: 50px;
+    color: white;
+}
+
+
+.backgroundscreen{
+    grid-column: span 4;
+    background-color: white;
+    height: 100px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.511) inset;
+    border-color: transparent;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.row1{
+    /* background-color: cornflowerblue; */
+    height: 100px;
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 10px;
+}
+.one, .two, .three,.equal,.five, .six, .minus,.four,.seven ,.eight, .plus,.nine,.del ,.clr, .dev,.mul{
+    background-color: #78C8FF;
+    height: 80px;
+    border-radius: 50%;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.511) ;
+    border-color: transparent;
+}
+.row2{
+    /* background-color: cornflowerblue; */
+    height: 100px;
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 10px;
+
+}
+
+.row3{
+    /* background-color: cornflowerblue; */
+    height: 100px;
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 10px;
+
+}
+
+.row4{
+    /* background-color: black; */
+    height: 100px;
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 10px;
+
+}
+
+#txt2{
+    font-size: 30px;
+    position: relative;
+    top:15px;
+}
+
+.row4 .mul p{
+    position: relative;
+    top:10px;
+}
+
+.row5{
+    height: 100px;
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 180px 127.21px;
+    gap: 10px;
+
+}
+
+.dot,.zero{
+    background-color: #78C8FF;
+    height: 90px;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.511) ;
+    position: relative;
+    left: 90px;
+    border-color: transparent;
+}
+.dot{
+    border-radius: 50%;
+}
+
+.zero{
+    border-radius: 40%;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    -ms-border-radius: 40%;
+    -o-border-radius: 40%;
+}

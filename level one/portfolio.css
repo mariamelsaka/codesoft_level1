@@ -1,0 +1,325 @@
+* {
+    font-family: "Berlin Sans FB";
+}
+
+#navbarNav {
+    /* margin-left: 10px; */
+    margin-top: 20px;
+
+}
+
+#navbarNav ul li a {
+    color: #78C8FF;
+}
+
+#logo {
+    margin-right: 100px;
+}
+
+#header {
+    margin-bottom: 100px;
+}
+
+.row {
+    /* margin-top: 10px; */
+    margin-left: 40px;
+}
+
+.row img {
+    position: relative;
+    left: 52%;
+    top: 15%;
+
+}
+
+.row .col-6 a {
+    text-decoration: none;
+}
+
+.row .col-6 a #icon {
+    font-size: 40px;
+}
+
+#btn1 {
+    position: relative;
+    /* left:20%; */
+    top: 20px;
+}
+
+#btn1 #btn11 {
+    margin-right: 40px;
+}
+
+#btn1 #btn11,
+#btn1 #btn12,
+#btn1 #btn12 a {
+    padding: 5px 20px 5px 20px;
+    border-color: #78C8FF;
+    /* */
+    color: black;
+}
+
+#btn1 #btn11:hover,
+#btn1 #btn12:hover {
+    background-color: #78C8FF;
+}
+
+.row #avatar {
+    width: 500px;
+    height: 500px;
+    margin-left: 100px;
+    background-image: url("img/IMG_9888.jpg");
+    background-size: cover;
+    border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -moz-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -o-border-radius: 20%;
+
+}
+
+/* what i do */
+
+
+#whatido{
+    width: 500px;
+    height: 300px;
+    margin-left: 35px;
+    margin-top: 50px;
+    background-image: url("img/front.jpg");
+    background-size: cover;
+}
+
+#skills{
+display: inline-block;
+position: relative;
+right: 80px;
+top: 25px;
+margin-bottom: 60px;
+}
+
+
+#point1{
+display: flex;
+align-items: flex-start;
+}
+
+/* end what i do */
+/* prof */
+#profrow{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+#profs{
+padding-left:180px;
+}
+#first {
+    background-color: #4c5052;
+    width: 300px;
+    height: 20px;
+    border-radius:20% ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:20% ;
+    -ms-border-radius:20% ;
+    -o-border-radius:20% ;
+    position: absolute;
+    z-index: 2;
+}
+
+#second{
+    background-color: #78C8FF;
+    width: 20px;
+    height: 20px;
+    border-radius:20% ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:20% ;
+    -ms-border-radius:20% ;
+    -o-border-radius:20% ;
+    position: absolute;
+    z-index: 1;
+    transition-delay: 1s;
+    transition-duration: 2s;
+    transition-property:width , transition-duration;
+    transition-timing-function: ease-in;
+}
+
+#second:hover{
+width: 260px;
+}
+
+#second1{
+    background-color: #78C8FF;
+    width: 170px;
+    height: 20px;
+    border-radius:20% ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:20% ;
+    -ms-border-radius:20% ;
+    -o-border-radius:20% ;
+    position: absolute;
+    z-index: 1;
+}
+
+#second2{
+    background-color: #78C8FF;
+    width: 90px;
+    height: 20px;
+    border-radius:20% ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:20% ;
+    -ms-border-radius:20% ;
+    -o-border-radius:20% ;
+    position: absolute;
+    z-index: 1;
+}
+
+.meter { 
+    height: 5px;
+    position: relative;
+    background: #f3efe6;
+    overflow: hidden;
+}
+
+.meter span {
+    display: block;
+    height: 100%;
+    
+}
+
+.progress {
+    background-color: #78C8FF;
+    height: 20px;
+    border-radius:20% ;
+    -webkit-animation: progressBar 3s ease-in-out;
+    -webkit-animation-fill-mode:both; 
+    -moz-animation: progressBar 3s ease-in-out;
+    -moz-animation-fill-mode:both; 
+}
+
+@-webkit-keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@-moz-keyframes progressBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+#skilback{
+    background-image: url("img/skills.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left:50px;
+    top:50px;
+}
+
+/* open source project start */
+#card1{
+    width:300px;
+    height: 200px;
+    background-color: #78c9ff23;
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+}
+#github{
+    padding: 5px 20px 5px 20px;
+    border-color: #78C8FF;
+    /* */
+    color: black;
+    position: relative;
+    left:40px;
+    top:20px;
+}
+
+#github a{
+    text-decoration: none;
+    color: black;
+}
+#github:hover {
+    background-color: #78C8FF;
+}
+/* open source project end */
+
+/* achievements and certifications start */
+
+#me1{
+    background-image: url("img/Coursera.png");
+    background-size: cover;
+    width:400px;
+    height:200px;
+    position: relative;
+}
+#me2{
+    background-image: url("img/amit_learning_logo.jfif");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    width:300px;
+    height:250px;
+    position: relative;
+    margin-left: 50px;
+    margin-right: 130px;
+}
+#me3{
+    background-image: url("img/cisco_logo.jfif");
+    background-size: cover;
+    width:300px;
+    height:250px;
+    position: relative;
+}
+/* layer for the p word */
+.layer{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    transition-duration: 0.5s;
+    transition-property:all;
+    transition-timing-function:ease-in-out;
+}
+.layer:hover{
+    background-color: #78c9ff8f;
+}
+.layer p{
+    width: 100%;
+    position: absolute;
+    font-weight: 200;
+    color: black;
+    font-size: 26px;
+    opacity: 0;
+    bottom: 0;
+    transition: 0.5s;
+    text-align: center;
+}
+.layer:hover p{
+    opacity: 1;
+    bottom: 20%;
+
+}
+
+.layer #super{
+    width: 100%;
+    position: absolute;
+    font-weight: 200;
+    color: black;
+    font-size: 26px;
+    opacity: 0;
+    bottom: 0;
+    transition: 0.5s;
+    text-align: center;
+}
+.layer:hover #super{
+    opacity: 1;
+    top: 1%;
+
+}
+
+
+
+
+/* achievements and certifications end */
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="calc.js">
+    <title>calculator</title>
+        <!-- normalize css -->
+        <link rel="stylesheet" href="../css/normalize.css" />
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <!-- font awesome css -->
+        <link rel="stylesheet" href="../css/all.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.min.css.map" />
+        <link rel="stylesheet" href="portfolio.css" />
+    <link rel="icon" type="image/x-icon" href="img/butterfly.png" />
+</head>
+<body>
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li id="logo">
+                            <a href="https://www.linkedin.com/in/mariam-elsaka-7a0138218/">
+                                <img src="img/butterfly.png" width="10%" alt />
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="portfolio.html#rep">open source projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html#whatido">what i do</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html#profrow">Proficiency</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html#me1">achievements and certifications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="landing_page.html">task 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="calc.html">task 3</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+        <form class="parent">
+            <!-- <div class="backgroundscreen"> -->
+            <input class="backgroundscreen" type="text" name="display">
+            <!-- </div>  -->
+
+            <div class="row4"> 
+                <input type="button" class="clr"  value="Ac"  onclick="display.value='' "  >
+                <input type="button" class="del" value="del" onclick="display.value=
+                display.value.toString().slice(0,-1) "> <!--what?--> 
+                <input type="button" class="mul" value="*" onclick="display.value+='*' ">
+                <input type="button" class="dev" value="/" onclick="display.value+='/' ">
+            </div>
+
+            <div class="row1">
+                <input class="one" type="button" value="1" onclick="display.value+='1' ">
+                <input class="two" type="button" value="2" onclick="display.value+='2' ">
+                <input class="three" type="button" value="3" onclick="display.value+='3' ">
+                <input class="plus" type="button" value="+" onclick="display.value+='+' " >
+
+            </div>
+
+            <div class="row2">
+                <input type="button" class="four" value="4" onclick="display.value+='4' ">
+                <input type="button" class="five" value="5" onclick="display.value+='5' ">
+                <input type="button" class="six" value="6" onclick="display.value+='6' ">
+                <input type="button" class="minus" value="-" onclick="display.value+='-' " >
+            </div>
+
+            <div class="row3">
+                <input class="seven" type="button" value="7" onclick="display.value+='7' ">
+                <input class="eight" type="button" value="8" onclick="display.value+='8' ">
+                <input class="nine" type="button" value="9" onclick="display.value+='9' ">
+                <input class="equal" type="button" value="=" onclick="display.value=eval(display.value)" >
+            </div>
+
+            <div class="row5">
+                <input class="zero" type="button" value="0" onclick="display.value+='0' ">
+                <input class="dot" type="button" value="." onclick="display.value+='.' ">
+            </div>
+
+        </form>
+</body>
+</html>
