@@ -10,7 +10,6 @@
 
 /* logo + navbar */
 #logo {
-    /* background-color: palevioletred; */
     height: 50px;
     background-color: white;
     background-image: url('img/butterfly.png');
@@ -135,17 +134,17 @@
     text-align: center;
     padding-top: 60px;
     font-size: 50px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 #click2 {
     background-color: #78C8FF;
     /* margin-top: 10px; */
-    border-radius:20px ;
-    -webkit-border-radius:20px ;
-    -moz-border-radius:20px ;
-    -ms-border-radius:20px ;
-    -o-border-radius:20px ;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 
 .col22 {

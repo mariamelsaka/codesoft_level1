@@ -1,325 +1,438 @@
+/* General */
 * {
-    font-family: "Berlin Sans FB";
+    font-family: "Berlin Sans FB", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-#navbarNav {
-    /* margin-left: 10px; */
-    margin-top: 20px;
-
+body {
+    background-color: #f8f9fa;
 }
 
-#navbarNav ul li a {
-    color: #78C8FF;
-}
-
-#logo {
-    margin-right: 100px;
+/* Navbar Logo */
+#logo img {
+    width: 50px;
+    height: auto;
 }
 
 #header {
-    margin-bottom: 100px;
+    margin-left: 5%;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.row {
-    /* margin-top: 10px; */
-    margin-left: 40px;
+/* Text section */
+.header-text h1 {
+    margin: 10px 0;
 }
 
-.row img {
-    position: relative;
-    left: 52%;
-    top: 15%;
+.header-text .last-name {
+    margin-left: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+    margin: 15px 0;
 
 }
 
-.row .col-6 a {
-    text-decoration: none;
-}
-
-.row .col-6 a #icon {
+.social-icon {
     font-size: 40px;
+    margin-right: 15px;
+    color: inherit;
+    transition: transform 0.3s;
 }
 
-#btn1 {
-    position: relative;
-    /* left:20%; */
-    top: 20px;
+.social-icons a {
+    text-decoration: none;
+    color: inherit;
 }
 
-#btn1 #btn11 {
-    margin-right: 40px;
+.social-icon:hover {
+    transform: scale(1.2);
 }
 
-#btn1 #btn11,
-#btn1 #btn12,
-#btn1 #btn12 a {
-    padding: 5px 20px 5px 20px;
-    border-color: #78C8FF;
-    /* */
-    color: black;
+/* Buttons */
+.header-buttons {
+    margin-top: 20px;
 }
 
-#btn1 #btn11:hover,
-#btn1 #btn12:hover {
-    background-color: #78C8FF;
+.header-buttons .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
-.row #avatar {
-    width: 500px;
+/* Avatar */
+#avatar {
+    width: 100%;
+    max-width: 500px;
     height: 500px;
-    margin-left: 100px;
     background-image: url("img/IMG_9888.jpg");
     background-size: cover;
+    background-position: center;
     border-radius: 20%;
-    -webkit-border-radius: 20%;
-    -moz-border-radius: 20%;
-    -ms-border-radius: 20%;
-    -o-border-radius: 20%;
-
+    margin: 20px auto;
 }
 
-/* what i do */
+/* Responsive */
+@media (max-width: 992px) {
+    #avatar {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-text {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        display: flex;
+    }
+
+    #avatar {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    #avatar {
+        height: 250px;
+    }
+
+    .social-icon {
+        font-size: 30px;
+    }
+
+    .header-text p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Social Icons */
 
 
-#whatido{
-    width: 500px;
-    height: 300px;
-    margin-left: 35px;
-    margin-top: 50px;
+/* What I Do */
+#whatido-img {
+    width: 100%;
+    height: 250px;
     background-image: url("img/front.jpg");
     background-size: cover;
+    background-position: center;
+    border-radius: 15px;
 }
 
-#skills{
-display: inline-block;
-position: relative;
-right: 80px;
-top: 25px;
-margin-bottom: 60px;
+#skills img {
+    width: 50px;
+    height: 50px;
 }
 
-
-#point1{
-display: flex;
-align-items: flex-start;
-}
-
-/* end what i do */
-/* prof */
-#profrow{
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-#profs{
-padding-left:180px;
-}
-#first {
-    background-color: #4c5052;
-    width: 300px;
-    height: 20px;
-    border-radius:20% ;
-    -webkit-border-radius:10px ;
-    -moz-border-radius:20% ;
-    -ms-border-radius:20% ;
-    -o-border-radius:20% ;
-    position: absolute;
-    z-index: 2;
-}
-
-#second{
-    background-color: #78C8FF;
-    width: 20px;
-    height: 20px;
-    border-radius:20% ;
-    -webkit-border-radius:10px ;
-    -moz-border-radius:20% ;
-    -ms-border-radius:20% ;
-    -o-border-radius:20% ;
-    position: absolute;
-    z-index: 1;
-    transition-delay: 1s;
-    transition-duration: 2s;
-    transition-property:width , transition-duration;
-    transition-timing-function: ease-in;
-}
-
-#second:hover{
-width: 260px;
-}
-
-#second1{
-    background-color: #78C8FF;
-    width: 170px;
-    height: 20px;
-    border-radius:20% ;
-    -webkit-border-radius:10px ;
-    -moz-border-radius:20% ;
-    -ms-border-radius:20% ;
-    -o-border-radius:20% ;
-    position: absolute;
-    z-index: 1;
-}
-
-#second2{
-    background-color: #78C8FF;
-    width: 90px;
-    height: 20px;
-    border-radius:20% ;
-    -webkit-border-radius:10px ;
-    -moz-border-radius:20% ;
-    -ms-border-radius:20% ;
-    -o-border-radius:20% ;
-    position: absolute;
-    z-index: 1;
-}
-
-.meter { 
-    height: 5px;
-    position: relative;
-    background: #f3efe6;
-    overflow: hidden;
-}
-
-.meter span {
-    display: block;
-    height: 100%;
-    
-}
-
-.progress {
-    background-color: #78C8FF;
-    height: 20px;
-    border-radius:20% ;
-    -webkit-animation: progressBar 3s ease-in-out;
-    -webkit-animation-fill-mode:both; 
-    -moz-animation: progressBar 3s ease-in-out;
-    -moz-animation-fill-mode:both; 
-}
-
-@-webkit-keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
-}
-
-@-moz-keyframes progressBar {
-  0% { width: 0; }
-  100% { width: 100%; }
-}
-
-#skilback{
+/* Proficiency / Skills */
+#skilback {
+    width: 100%;
+    height: 250px;
     background-image: url("img/skills.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    position: relative;
-    left:50px;
-    top:50px;
+    background-position: center;
+    margin-top: 20px;
 }
 
-/* open source project start */
-#card1{
-    width:300px;
-    height: 200px;
-    background-color: #78c9ff23;
-    display: flex;
-    justify-content: center;
-    margin-left: 70px;
-}
-#github{
-    padding: 5px 20px 5px 20px;
-    border-color: #78C8FF;
-    /* */
-    color: black;
-    position: relative;
-    left:40px;
-    top:20px;
+/* Progress bars */
+.progress {
+    height: 20px;
+    border-radius: 10px;
 }
 
-#github a{
-    text-decoration: none;
-    color: black;
-}
-#github:hover {
+.progress-bar {
     background-color: #78C8FF;
 }
-/* open source project end */
 
-/* achievements and certifications start */
+/* Open Source Cards */
+#rep .card {
+    border: 1px solid #78C8FF33;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
 
-#me1{
-    background-image: url("img/Coursera.png");
+#rep .card:hover {
+    transform: translateY(-5px);
+}
+
+/* Achievements Cards */
+#me1, #me2, #me3 {
+    width: 100%;
+    height: 200px;
     background-size: cover;
-    width:400px;
-    height:200px;
+    background-position: center;
+    border-radius: 10px;
     position: relative;
 }
-#me2{
-    background-image: url("img/amit_learning_logo.jfif");
-    background-size: cover;
-    /* background-repeat: no-repeat; */
-    width:300px;
-    height:250px;
-    position: relative;
-    margin-left: 50px;
-    margin-right: 130px;
-}
-#me3{
-    background-image: url("img/cisco_logo.jfif");
-    background-size: cover;
-    width:300px;
-    height:250px;
-    position: relative;
-}
-/* layer for the p word */
-.layer{
+
+.layer {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     background: transparent;
-    transition-duration: 0.5s;
-    transition-property:all;
-    transition-timing-function:ease-in-out;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
 }
-.layer:hover{
-    background-color: #78c9ff8f;
+
+.layer:hover {
+    background-color: rgba(120, 200, 255, 0.56);
 }
-.layer p{
-    width: 100%;
-    position: absolute;
-    font-weight: 200;
+
+.layer p {
     color: black;
-    font-size: 26px;
-    opacity: 0;
-    bottom: 0;
-    transition: 0.5s;
+    font-size: 1rem;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    #avatar {
+        width: 200px;
+        height: 200px;
+    }
+
+    #whatido-img, #skilback {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1, header h2 {
+        text-align: center;
+    }
+
+    #btn1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills {
+        justify-content: center;
+    }
+
+    #rep .card {
+        margin: auto;
+    }
+
+    #me1, #me2, #me3 {
+        height: 180px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    #avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    #whatido-img, #skilback {
+        height: 150px;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .layer p {
+        font-size: 0.8rem;
+    }
+}
+
+/* open source project */
+.open-source-projects {
+    padding: 50px 20px;
     text-align: center;
 }
-.layer:hover p{
-    opacity: 1;
-    bottom: 20%;
 
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
 }
 
-.layer #super{
-    width: 100%;
-    position: absolute;
-    font-weight: 200;
+.card#card1 {
+    width: 300px;
+    min-height: 200px;
+    background-color: #78c9ff23;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.card#card1:hover {
+    transform: translateY(-5px);
+}
+
+.card-content h6 {
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+#github {
+    padding: 5px 20px;
+    border-color: #78C8FF;
     color: black;
-    font-size: 26px;
-    opacity: 0;
-    bottom: 0;
-    transition: 0.5s;
+}
+
+#github a {
+    text-decoration: none;
+    color: black;
+}
+
+#github:hover {
+    background-color: #78C8FF;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .projects-container {
+        gap: 20px;
+    }
+
+    .card#card1 {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card#card1 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card#card1 {
+        width: 100%;
+    }
+}
+
+/* Achievements & Certifications */
+.achievement-card {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: auto;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Individual backgrounds */
+#me1 {
+    background-image: url("img/Coursera.png");
+}
+
+#me2 {
+    background-image: url("img/Coursera.png");
+}
+
+/* change image if needed */
+#me3 {
+    background-image: url("img/Coursera.png");
+}
+
+/* change image if needed */
+#me4 {
+    background-image: url("img/Coursera.png");
+}
+
+#me5 {
+    background-image: url("img/amit_learning_logo.jfif");
+}
+
+#me6 {
+    background-image: url("img/cisco_logo.jfif");
+}
+
+/* Layer for hover text */
+.layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 10px;
 }
-.layer:hover #super{
+
+.layer:hover {
+    background-color: rgba(120, 200, 255, 0.56);
+}
+
+.layer p {
+    color: black;
+    font-size: 1rem;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.layer:hover p {
     opacity: 1;
-    top: 1%;
-
 }
 
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .achievement-card {
+        height: 180px;
+    }
+}
 
+@media (max-width: 768px) {
+    .achievement-card {
+        height: 160px;
+    }
 
+    .layer p {
+        font-size: 0.9rem;
+    }
+}
 
-/* achievements and certifications end */
+@media (max-width: 480px) {
+    .achievement-card {
+        height: 140px;
+    }
 
+    .layer p {
+        font-size: 0.8rem;
+    }
+}

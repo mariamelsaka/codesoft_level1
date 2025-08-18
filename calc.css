@@ -1,13 +1,14 @@
-*{
+* {
     font-family: "Berlin Sans FB";
 }
-.parent{
-    height:700px;
-    width:450px;
+
+.parent {
+    height: 700px;
+    width: 450px;
     background-color: #78c9ff8f;
     display: grid;
-    grid-template-rows: repeat(6,auto);
-    gap:10px  ;
+    grid-template-rows: repeat(6, auto);
+    gap: 10px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -15,20 +16,20 @@
     -o-border-radius: 20px;
     padding: 20px;
     position: absolute;
-    left:30%;
-    
+    left: 30%;
+
     margin-top: 10px;
     text-align: center;
 
 }
 
-input[type="button"]{
+input[type="button"] {
     font-size: 50px;
     color: white;
 }
 
 
-.backgroundscreen{
+.backgroundscreen {
     grid-column: span 4;
     background-color: white;
     height: 100px;
@@ -43,15 +44,16 @@ input[type="button"]{
     padding-left: 20px;
 }
 
-.row1{
+.row1 {
     /* background-color: cornflowerblue; */
     height: 100px;
     grid-column: span 4;
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(4, auto);
     gap: 10px;
 }
-.one, .two, .three,.equal,.five, .six, .minus,.four,.seven ,.eight, .plus,.nine,.del ,.clr, .dev,.mul{
+
+.one, .two, .three, .equal, .five, .six, .minus, .four, .seven, .eight, .plus, .nine, .del, .clr, .dev, .mul {
     background-color: #78C8FF;
     height: 80px;
     border-radius: 50%;
@@ -59,51 +61,52 @@ input[type="button"]{
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.511) ;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.511);
     border-color: transparent;
 }
-.row2{
+
+.row2 {
     /* background-color: cornflowerblue; */
     height: 100px;
     grid-column: span 4;
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(4, auto);
     gap: 10px;
 
 }
 
-.row3{
+.row3 {
     /* background-color: cornflowerblue; */
     height: 100px;
     grid-column: span 4;
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(4, auto);
     gap: 10px;
 
 }
 
-.row4{
+.row4 {
     /* background-color: black; */
     height: 100px;
     grid-column: span 4;
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(4, auto);
     gap: 10px;
 
 }
 
-#txt2{
+#txt2 {
     font-size: 30px;
     position: relative;
-    top:15px;
+    top: 15px;
 }
 
-.row4 .mul p{
+.row4 .mul p {
     position: relative;
-    top:10px;
+    top: 10px;
 }
 
-.row5{
+.row5 {
     height: 100px;
     grid-column: span 2;
     display: grid;
@@ -112,19 +115,20 @@ input[type="button"]{
 
 }
 
-.dot,.zero{
+.dot, .zero {
     background-color: #78C8FF;
     height: 90px;
-    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.511) ;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.511);
     position: relative;
     left: 90px;
     border-color: transparent;
 }
-.dot{
+
+.dot {
     border-radius: 50%;
 }
 
-.zero{
+.zero {
     border-radius: 40%;
     -webkit-border-radius: 40%;
     -moz-border-radius: 40%;
