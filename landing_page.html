@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="landing_page.css">
+    <link rel="stylesheet" href="index.css">
     <!-- normalize css -->
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- bootstrap css -->
@@ -18,18 +19,30 @@
 </head>
 
 <body>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="https://www.linkedin.com/in/mariam-elsaka-7a0138218/">
+                <img src="img/butterfly.png" alt="Logo" width="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html#rep">Open Source Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#whatido">What I Do</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#profrow">Proficiency</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="landing_page.html">Task 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calc.html">Task 3</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="parent">
         <!-- START LOGO AND NAVBAR -->
-        <div id="logo">
-        </div>
-        <div id="navbar">
-            <a href="index.html#rep">open source projects</a>
-            <a href="index.html#whatido">what i do</a>
-            <a href="index.html#profrow">Proficiency</a>
-            <a href="index.html#me1">achievements and certifications</a>
-            <a href="landing_page.html">task 2</a>
-            <a href="calc.html">task 3</a>
-        </div>
+    
         <!-- END LOGO AND NAVBAR -->
 
 
@@ -129,19 +142,16 @@
         </div>
         <!-- end card -->
 
-        <!-- START FOOTER -->
-        <div id="logo">
-        </div>
-        <div id="navbar">
-            <a href="portfolio.html#rep">open source projects</a>
-            <a href="portfolio.html#whatido">what i do</a>
-            <a href="portfolio.html#profrow">Proficiency</a>
-            <a href="portfolio.html#me1">achievements and certifications</a>
-            <a href="landing_page.html">task 2</a>
-            <a href="calc.html">task 3</a>
-        </div>
-        <!-- END FOOTER -->
+        
     </div>
+    <!-- Footer -->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2025 Mariam Elsaka</p>
+        </div>
+    </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

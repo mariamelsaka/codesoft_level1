@@ -1,8 +1,20 @@
 * {
     font-family: "Berlin Sans FB";
 }
-
 .parent {
+    max-width: 450px;   /* instead of fixed width+absolute */
+    width: 100%;
+    background-color: #78c9ff8f;
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    gap: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;   /* center it */
+    text-align: center;
+}
+
+/* .parent {
     height: 700px;
     width: 450px;
     background-color: #78c9ff8f;
@@ -17,12 +29,12 @@
     padding: 20px;
     position: absolute;
     left: 30%;
-
     margin-top: 10px;
     text-align: center;
 
+} */
+@media (max-width: 767px) {
 }
-
 input[type="button"] {
     font-size: 50px;
     color: white;
@@ -45,7 +57,6 @@ input[type="button"] {
 }
 
 .row1 {
-    /* background-color: cornflowerblue; */
     height: 100px;
     grid-column: span 4;
     display: grid;
@@ -66,7 +77,6 @@ input[type="button"] {
 }
 
 .row2 {
-    /* background-color: cornflowerblue; */
     height: 100px;
     grid-column: span 4;
     display: grid;
@@ -76,7 +86,6 @@ input[type="button"] {
 }
 
 .row3 {
-    /* background-color: cornflowerblue; */
     height: 100px;
     grid-column: span 4;
     display: grid;
@@ -86,7 +95,6 @@ input[type="button"] {
 }
 
 .row4 {
-    /* background-color: black; */
     height: 100px;
     grid-column: span 4;
     display: grid;
@@ -135,3 +143,4 @@ input[type="button"] {
     -ms-border-radius: 40%;
     -o-border-radius: 40%;
 }
+

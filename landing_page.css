@@ -8,35 +8,8 @@
     grid-template-columns: repeat(6, auto);
 }
 
-/* logo + navbar */
-#logo {
-    height: 50px;
-    background-color: white;
-    background-image: url('img/butterfly.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 250px;
-}
 
-#navbar {
-    background-color: white;
-    grid-column: span 5;
-    color: black;
-    height: 50px;
-    padding-top: 15px;
 
-}
-
-#navbar a {
-    text-decoration: none;
-    color: #78C8FF;
-    padding: 10px;
-    /* on media query change position */
-    position: relative;
-    left: 250px;
-
-}
 
 /* start header ----------------------------- */
 #header {
@@ -169,7 +142,7 @@
 
 /* start card */
 #card {
-    /* background-color:red; */
+
     grid-column: span 6;
     height: 700px;
     margin-top: 40px;
@@ -179,7 +152,6 @@
 }
 
 #card #image {
-    /* background-color: aquamarine; */
     height: 500px;
     width: calc(100%/3);
     padding: 1%;
@@ -201,3 +173,75 @@
 }
 
 /* end card */
+
+/* Large screens (default: your current styles) */
+
+/* Tablets */
+@media (max-width: 992px) {
+
+  #header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #header div {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  #main, #main2 {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .col12, .col22 {
+    width: 90%;
+    left: 0;
+    margin: auto;
+    top: 0;
+  }
+
+  #card {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    
+  }
+
+  #card #image {
+    width: 80%;
+    margin-bottom: 200px;
+  }
+  #card img {
+    width: 100%;
+}
+
+#card #image {
+    transition-delay: 1s;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+#card #image:hover {
+    width: 100%;
+}
+#click2 {
+    position: relative;
+    left: 4rem;
+    top:80%;
+}
+}
+
+/* Mobiles */
+@media (max-width: 576px) {
+
+  #header div {
+    height: auto;
+  }
+
+  #header div img {
+    height: auto;
+    max-height: 200px;
+  }
+}
